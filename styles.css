@@ -1,1 +1,44 @@
 /*  your css code here. If applicable */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  height: 100vh;
+  padding: 10px;
+}
+
+.item {
+  background-color: #333;
+  color: white;
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Specific styled elements */
+.item1 {
+  grid-column: span 4;
+  background-color: green;
+}
+
+.item2 {
+  grid-row: span 4;
+  background-color: green;
+}
+
+.item4 {
+  grid-column: span 2;
+  background-color: green;
+}
+
+.item5 {
+  grid-column: span 2;
+  background-color: green;
+}
+
+.item10 {
+  grid-column: span 3;
+  background-color: green;
+}
